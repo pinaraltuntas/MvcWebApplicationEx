@@ -1,0 +1,15 @@
+﻿@model Product
+
+<h1>Ürün Düzenle</h1>
+<form action="~/product/edit" method="post">
+	<input type="hidden" name="ProductId" value="@Model.ProductId" /><br />
+	<label>Ürün Adı</label>
+	<input type="text" name="Name" value="@Model.Name" /><br />
+	<label>Ürün Fiyatı</label>
+	<input type="text" name="Price" value="@Model.Price" /><br />
+	<label>Ürün Stoğu</label>
+	<input type="number" name="Stock" value="@Model.Stock" /><br />
+
+	<button>Düzenle</button>
+	<a href="~product/index">Liste sayfasına geri dön</a>
+</form>

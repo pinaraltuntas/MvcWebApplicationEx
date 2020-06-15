@@ -1,0 +1,14 @@
+﻿@model Product
+
+<h1>Ürün Oluştur</h1>
+<form action="~/product/create" method="post">
+	<label>Ürün Adı</label>
+	<input type="text" name="Name" value="" /><br />
+	<label>Ürün Fiyatı</label>
+	<input type="text" name="Price" value="" /><br />
+	<label>Ürün Stoğu</label>
+	<input type="number" name="Stock" value="" /><br />
+
+	<button>Ekle</button>
+	<a href="~product/index">Liste sayfasına geri dön</a>
+</form>

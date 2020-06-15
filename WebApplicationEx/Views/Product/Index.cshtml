@@ -1,0 +1,15 @@
+﻿@model List<Product>
+
+<ul>
+	<a href="~/Product/Create">Yeni Ürün</a>
+	<h1>Ürünler</h1>
+
+	@foreach (Product item in Model)
+	{
+	<li>
+		<a href="/product/Detail/@item.ProductId">@item.Name</a> |
+		<a href="/product/Edit/@item.ProductId">Düzenle</a> |
+		<a href="/product/Delete/@item.ProductId">Sil</a>
+	</li>
+	}
+</ul>
